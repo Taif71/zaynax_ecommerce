@@ -4,23 +4,43 @@ import './product-card.styles.css';
 
 
 import {
+    Container, Row, Col,
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button
   } from 'reactstrap';
-
+  
 const ProductCard = () => {
     return (
-       <div className=''>
-        <Card>
-            <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
-            <CardBody>
-            <CardTitle tag="h5">Card title</CardTitle>
-            <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
-            </CardBody>
-        </Card>
-    </div>
+        // <Container>
+            <Card style={{height: "250px", width: "200px", margin: "20px 10px"}}>                
+                <Container>
+                    <Row style={{height: "175px"}}>
+                        <Col sm="12">
+                            <CardImg src="https://upload.wikimedia.org/wikipedia/commons/5/58/AcetoFive.JPG" alt="Card image cap" />
+                        </Col>
+                    </Row>
+                </Container>
+                {/* <Row> */}
+                    {/* <CardBody> */}
+                        <Row>
+                            <Col sm="12" tag="p6">
+                                <CardText>Product-Title</CardText>
+                            </Col>                        
+                        </Row>
+                        
+                        <Row style={{margin:"20px 0px"}} className="justify-content-between">
+                            <Col sm="8">
+                                <CardText tag="h6" className="">BDT. 7,850</CardText>                            
+                            </Col>
+                            <Col sm="4">
+                                <CardText className="discount-bg">15%</CardText>
+                            </Col>
+                        </Row>
+                        
+                    {/* </CardBody> */}
+                
+            </Card>
+        // </Container>
     );
 }
 
