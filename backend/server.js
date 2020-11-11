@@ -5,17 +5,18 @@ const mongoose = require('mongoose');
 
 
 const app = express();
+app.use(bodyParser.json());
 
 const api = require('./API/routes');
 const adminRoutes = require('./API/admin');
 
 
-const MONGODB_URI = 'mongodb+srv://taif:bakshi@cluster0.748zr.mongodb.net/zaynexDB'
-app.use(bodyParser.json());
+const MONGODB_URI = 'mongodb+srv://taif:bakshi@cluster0.748zr.mongodb.net/zaynaxDB?retryWrites=true&w=majority';
+
 
 
 app.use(api);
-app.use('/admin', adminRoutes);
+app.use('/admin',adminRoutes);
 
 
 
