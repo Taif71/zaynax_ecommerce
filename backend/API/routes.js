@@ -4,6 +4,8 @@ const router = express.Router();
 
 const homeController = require('../controllers/homeControllers/homeControllers');
 
+
+
 router.get('/', homeController.getAllProducts);
 
 router.get('/checkout/product-details', homeController.getProductDetails);

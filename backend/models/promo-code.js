@@ -5,7 +5,8 @@ const Schema = mongoose.Schema;
 const promoSchema = new Schema({
     code: {
         type: String,
-        required: true
+        required: true,
+        unique : true
     },
     startDate:{
         type:  Date,
@@ -27,6 +28,7 @@ const promoSchema = new Schema({
         type: Boolean,
         required: true
     }
+    //createdDate: Date.now
 });
 
 module.exports = mongoose.model('Promo', promoSchema);
