@@ -12,36 +12,33 @@ import
     NavLink,
     NavItem,    
     NavbarText,   
-    Container
+    Container,
+    Row
 } 
 from 'reactstrap';
 
+import { MDBIcon, MDBContainer, MDBCol, MDBRow } from 'mdbreact'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { user, cart } from '@fortawesome/free-solid-svg-icons";';
 
 const NavBar = () => {
     return (
         <div className=''>
             
             <Navbar color="light" light expand="md">
-            <Container>
+            <MDBContainer>
 
-                <NavbarBrand href="/">Zaynax</NavbarBrand>
+            <MDBRow>
+                <NavbarBrand href="/"><label className="brand"><p className="logo-title"><bold>Zaynax</bold></p></label></NavbarBrand>
                 
-                <Collapse navbar>
-                <Nav className="mr-auto" navbar>
-                    <NavItem>
-                        <NavLink href="/components/">Components</NavLink>
-                    </NavItem>                    
-
-                </Nav>
-                <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
-                <i class="fas fa-search" aria-hidden="true"></i>
-                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
-                    aria-label="Search" />
-                </form>
-                <NavbarText>Simple Text</NavbarText>
-                </Collapse>
-
-                </Container>
+               
+                
+                
+                <MDBIcon icon="shopping-cart" />
+                <MDBIcon icon="shopping-cart" />
+                
+            </MDBRow>    
+                </MDBContainer>
             </Navbar>
             
         </div>
@@ -49,3 +46,11 @@ const NavBar = () => {
 }
 
 export default NavBar;
+
+
+// <Nav className="mr-auto" navbar>
+//                     <NavItem>
+//                         <NavLink href="/components/">Components</NavLink>
+//                     </NavItem>                    
+
+//                 </Nav>

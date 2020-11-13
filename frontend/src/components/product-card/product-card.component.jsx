@@ -9,14 +9,14 @@ import {
     CardTitle, CardSubtitle, Button
   } from 'reactstrap';
   
-const ProductCard = () => {
+const ProductCard = ({ products }) => {
     return (
         // <Container>
             <Card style={{height: "250px", width: "200px", margin: "20px 10px"}}>                
                 <Container>
                     <Row style={{height: "175px"}}>
                         <Col sm="12">
-                            <CardImg src="https://upload.wikimedia.org/wikipedia/commons/5/58/AcetoFive.JPG" alt="Card image cap" />
+                            <CardImg src="" alt="Card image cap" />
                         </Col>
                     </Row>
                 </Container>
@@ -24,13 +24,13 @@ const ProductCard = () => {
                     {/* <CardBody> */}
                         <Row>
                             <Col sm="12" tag="p6">
-                                <CardText>Product-Title</CardText>
+                            <CardText>Milk</CardText>
                             </Col>                        
                         </Row>
                         
                         <Row style={{margin:"20px 0px"}} className="justify-content-between">
                             <Col sm="8">
-                                <CardText tag="h6" className="">BDT. 7,850</CardText>                            
+                                <CardText tag="h6" className="">BDT. 2222</CardText>                            
                             </Col>
                             <Col sm="4">
                                 <CardText className="discount-bg">15%</CardText>

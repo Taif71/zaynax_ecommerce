@@ -12,6 +12,12 @@ import CheckoutPage from './pages/checkoutpage/checkoutpage.component';
 import UserSignup from './pages/user-signup/user-signup.component';
 
 import DashboardPage from './pages/admin/dashboardpage.component';
+import PromoPage from './pages/admin/promospage.component';
+import AddPromoPage from './pages/admin/add-promo.component';
+import Adminproducts from './pages/admin/admin-product.component';
+import OrdersPage from './pages/admin/orderspage.component';
+import AddProducts from './pages/admin/addproductPage.component';
+
 
 class App extends Component {
   render() {
@@ -26,6 +32,13 @@ class App extends Component {
        <Route exact path='/user-signup' component={UserSignup} />
 
        <Route exact path='/admin/dashboard' component={DashboardPage} />
+       <Route exact path='/admin/dashboard/promocode' component={PromoPage} />
+       
+       <Route exact path='/admin/add-promo' component={AddPromoPage} />
+       <Route exact path='/admin/products' component={Adminproducts} />
+       <Route exact path='/admin/orders' component={OrdersPage} />
+       <Route exact path='/admin/add-product' component={AddProducts} />
+
     </Switch>
       
       

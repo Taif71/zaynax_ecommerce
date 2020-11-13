@@ -27,14 +27,14 @@ const signin = (req, res) => {
 const addNewProduct = (req, res) => {
     // req data => image, product-name, original-price, discount-rate, shipping-charge, color, size, active 
 
-    let image = req.body.image;
+    let image = req.body.pictures;
     let productName = req.body.productName;
     let price = req.body.price;
     let discountRate = req.body.discountRate;
     let shippingCharge = req.body.shippingCharge;
     let color = req.body.color;
     let size = req.body.size;
-    let active = req.body.active;    
+    let active = req.body.swicth1;    
 
     const product = new Product({
         image: image,

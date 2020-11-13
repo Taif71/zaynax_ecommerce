@@ -9,19 +9,40 @@ import {Container, Row, Col} from 'reactstrap';
 import ProductCard from '../../components/product-card/product-card.component';
 
 
-const Homepage = () => {
+class Homepage extends React.Component {
+    state = {
+        Products: null
+    };
+        
+    async componentDidMount() {
+        const url="https://localhost:8000/";
+        const response = await fetch(url);
+        const data = response.json();
+
+        this.setState({
+            Products: data
+        });
+    }
+    render() {
+        
     return (
         <div className="">
-             {/* <NavBar /> */}
-             <h1>Homepage</h1>  
+             
+             
 
             <Container>
             <Row>
-                <Col><ProductCard /></Col>
-                <Col><ProductCard /></Col>
-                <Col><ProductCard /></Col>
-                <Col><ProductCard /></Col>
-                <Col><ProductCard /></Col>
+                {
+                    //this.state.Products.map(products => {
+                    <Col>
+                        <ProductCard  />
+                        {/* products={products} */}
+                    </Col>
+                    //})
+                }
+            
+                
+                
             </Row>      
             </Container>  
                     
@@ -31,6 +52,6 @@ const Homepage = () => {
             
         </div>
     );
+ }
 }
-
 export default Homepage;
