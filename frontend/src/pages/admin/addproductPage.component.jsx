@@ -2,7 +2,7 @@ import React from 'react';
 import { MDBCol, MDBRow, MDBCard, MDBCardBody, MDBInput, MDBBtn} from 'mdbreact';
 import ImageUploader from 'react-images-upload';
 
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 // import ProductCard from '../../components/product-card/product-card.component';
 import Sidebar from '../../components/sidebarnav/sidebar.component';
@@ -117,7 +117,7 @@ class AddProducts extends React.Component {
     
 
  
-    return () {
+    render() {
     return (
         <div>
             <MDBRow style={{ background: "#EFEFEF"}}>
@@ -223,7 +223,7 @@ class AddProducts extends React.Component {
                                 />
                                 </div>
                                 <div className="text-center py-4 mt-3">
-                                <MDBBtn color="cyan" type="submit">
+                                <MDBBtn color="yellow" type="submit">
                                     Add Product
                                 </MDBBtn>
                                 </div>

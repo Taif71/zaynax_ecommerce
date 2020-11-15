@@ -15,7 +15,8 @@ class Homepage extends React.Component {
     };
         
     async componentDidMount() {
-        const url="https://localhost:8000/";
+        // const url="https://localhost:8000/";
+        const url = 'https://picsum.photos/500/500';
         const response = await fetch(url);
         const data = response.json();
 
@@ -32,17 +33,45 @@ class Homepage extends React.Component {
 
             <Container>
             <Row>
-                {
-                    //this.state.Products.map(products => {
-                    <Col>
+                
+                    
+                    <Col sm="2" className="mr-4">
                         <ProductCard  />
-                        {/* products={products} */}
                     </Col>
-                    //})
-                }
-            
+
+                    <Col sm="2" className="mr-4">
+                        <ProductCard  />                    
+                    </Col>
+
+                    <Col sm="2" className="mr-4">
+                        <ProductCard  />                    
+                    </Col>
+
+                    <Col sm="2" className="mr-4">
+                        <ProductCard  />
+                    </Col>
+
+                    <Col sm="2" className="mr-4">
+                        <ProductCard  />
+                    </Col>
+                    <Col sm="2" className="mr-4">
+                        <ProductCard  />
+                    </Col>
+                    <Col sm="2" className="mr-4">
+                        <ProductCard  />
+                    </Col>
+                    <Col sm="2" className="mr-4">
+                        <ProductCard  />
+                    </Col>
+                    <Col sm="2" className="mr-4">
+                        <ProductCard  />
+                    </Col>
+                    <Col sm="2" className="mr-4">
+                        <ProductCard  />
+                    </Col>
+                    
                 
-                
+                                            
             </Row>      
             </Container>  
                     

@@ -8,7 +8,7 @@ import
     Navbar,
     Nav,
     NavbarBrand,    
-    Collapse,        
+           
     NavLink,
     NavItem,    
     NavbarText,   
@@ -20,6 +20,8 @@ from 'reactstrap';
 import { MDBIcon, MDBContainer, MDBCol, MDBRow } from 'mdbreact'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { user, cart } from '@fortawesome/free-solid-svg-icons";';
+
+// import Searchbar from 'framework7-react';
 
 const NavBar = () => {
     return (
@@ -34,8 +36,8 @@ const NavBar = () => {
                
                 
                 
-                <MDBIcon icon="shopping-cart" />
-                <MDBIcon icon="shopping-cart" />
+                <i className="fa fa-spinner fa-spin">no spinner but why</i>
+                
                 
             </MDBRow>    
                 </MDBContainer>
@@ -47,10 +49,3 @@ const NavBar = () => {
 
 export default NavBar;
 
-
-// <Nav className="mr-auto" navbar>
-//                     <NavItem>
-//                         <NavLink href="/components/">Components</NavLink>
-//                     </NavItem>                    
-
-//                 </Nav>

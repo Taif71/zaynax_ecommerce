@@ -1,5 +1,7 @@
 import React from 'react';
-import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
+// import { MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
+const mdbreact = require('mdbreact'); 
+const { MDBTable, MDBTableBody, MDBTableHead } = mdbreact;
 
 const AllTable = () => {
   return (
