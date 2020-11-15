@@ -36,7 +36,7 @@ const NavBar = () => {
                
                 
                 
-                <i className="fa fa-spinner fa-spin">no spinner but why</i>
+                <i className="fa fa-spinner fa-spin">ICON</i>
                 
                 
             </MDBRow>    
